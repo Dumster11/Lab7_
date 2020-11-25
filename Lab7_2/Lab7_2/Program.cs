@@ -14,9 +14,9 @@ namespace Lab7_task2
         }
         public int[,] Matrix = new int[100, 100];
 
-        public void Vivod(int c, int d) //метод вывода матрицы
+        public void Vivod(int c, int d) 
         {
-            //выводим матрицу 
+          
             for (int i = 0; i < c; i++)
             {
                 for (int j = 0; j < d; j++)
@@ -29,18 +29,18 @@ namespace Lab7_task2
     class podmatrix
     {
         public podmatrix(ref int[,] matr, int a, int b)
-        //в конструктор передаём параметры: указатель на исх. матрицу, длинну ширину создаваемой матрицы
+        
         {
             A = a; B = b;
             for (int i = 0; i < a; i++)
                 for (int j = 0; j < b; j++)
-                    Array[i, j] = matr[i, j]; //передаём элементы исх. матрицы в подматрицу
+                    Array[i, j] = matr[i, j]; 
         }
 
-        private int A, B; // А,В - размер матрицы
-        private int[,] Array = new int[300, 300]; //объявляем матрицу
+        private int A, B; 
+        private int[,] Array = new int[300, 300]; 
 
-        public void showArray() //метод вывода подматрицы
+        public void showArray() 
         {
             for (int i = 0; i < A; i++)
             {
